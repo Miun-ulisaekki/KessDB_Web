@@ -1,0 +1,147 @@
+.back{
+    position: absolute;
+    width: 64px;
+    height: 24px;
+    left: 83px;
+    top: 50px;
+}
+.top_tittle{
+    position: absolute;
+    width: 378px;
+    height: 48px;
+    left: 905px;
+    top: 69px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+
+    color: #000000;
+}
+.kess{
+    position: absolute;
+    width: 117px;
+    height: 61px;
+    left: 100px;
+    top: 187px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 61px;
+    /* identical to box height */
+
+
+    color: #F1F1F2;
+}
+.book{
+    position: absolute;
+    width: 175px;
+    height: 73px;
+    left: 99px;
+    top: 233px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 73px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+.border1,.border2,.border3 {
+    position: absolute;
+    left: 100px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #000000;
+}
+.border1 {
+    width: 150px;
+    height: 24px;
+    top: 382px;
+
+}
+.border2{
+    width: 210px;
+    height: 24px;
+    top: 496px;
+}
+.border3{
+    width: 190px;
+    height: 24px;
+    top: 610px;
+}
+.f1_1,.f1_2,.f2_1,.f2_2,.f3_1,.f3_2,.f3_3,.f3_4,.f3_5,.f3_6{
+    position: absolute;
+    left: 100px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #D0D0D7;
+}
+.f1_1{
+    width: 130px;
+    height: 19px;
+    top: 414px;
+}
+.f1_2{
+    width: 210px;
+    height: 19px;
+    top: 439px;
+}
+.f2_1{
+    width: 150px;
+    height: 19px;
+    top: 528px;
+}
+.f2_2{
+    width: 90px;
+    height: 19px;
+    top: 553px;
+}
+.f3_1{
+    width: 140;
+    height: 19px;
+    top: 643px;
+
+}
+.f3_2{
+    width: 120px;
+    height: 19px;
+    top: 668px;
+}
+.f3_3{
+    width: 150px;
+    height: 19px;
+    top: 693px;    
+}
+.f3_4{
+    width: 150px;
+    height: 19px;
+    top: 718px;  
+}
+.f3_5{
+    width: 150px;
+    height: 19px;
+    top: 743px;   
+}
+.f3_6{
+    width: 150px;
+    height: 19px;
+    top: 767px;
+}

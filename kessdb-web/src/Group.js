@@ -1,10 +1,11 @@
-import './App.css';
+import './Main.css';
 import { ReactComponent as Close } from './svg/Group 2.svg';
 
 
 
 export default function Group() {
       
+  
   return (
     <>
       <div className = 'group-page'>
