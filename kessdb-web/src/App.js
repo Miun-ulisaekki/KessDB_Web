@@ -1,5 +1,5 @@
 import Router from "./Router.js"
-import Tutorial from './Tutorial/Tutorial';
+import Tutorial from './Tutorial';
 import Main from './Main.js';
 import './Main.css';
 function App() {

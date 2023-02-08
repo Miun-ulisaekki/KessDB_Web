@@ -1,3 +1,7 @@
+html,body,.root{
+    /* all: none; */
+    height: 5000px  ;
+}
 .back{
     position: absolute;
     width: 64px;
@@ -7,17 +11,41 @@
 }
 .top_tittle{
     position: absolute;
-    width: 378px;
     height: 48px;
-    left: 905px;
-    top: 69px;
+    left: 25%;  
+    top: 100px;
 
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
     line-height: 48px;
+    color: #000000;
+}
+.second_tittle{
+    position: absolute;
+    height: 48px;
+    left: 25%;  
+    top: 1500px;
 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+}
+.last_tittle{
+    position: absolute;
+    height: 48px;
+    left: 25%;  
+    top: 3200px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
     color: #000000;
 }
 .kess{
@@ -144,4 +172,83 @@
     width: 150px;
     height: 19px;
     top: 767px;
+}
+/* .memo{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: aqua;
+    left: 38%;
+    top: 3%;
+    text-align: center;
+    background-color: antiquewhite;
+} */
+
+.program_1,.program_2,.program_3,.program_4,.program_5,.program_6,.program_7{
+    position: absolute;
+    left: 25%;
+    font-size: 17px;
+    line-height: 22px;
+}
+.program_1{
+    top: 300px;    
+}
+.program_2{
+    top: 900px;
+}
+.program_3 {
+   top: 1800px;
+}
+.program_4 {
+    top: 2500px;
+ }
+ .program_5{
+    top: 3500px;
+ }
+ .program_6{
+    top: 4300px;
+ }
+ .program_7{
+    top: 3500px;
+ }
+.program_text,.program_text2,.program_text3,.program_text4,.program_text5,.program_text6,.program_text7,.program_text8{
+    position: absolute;
+    font-family: 'inter';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 40px;
+    left: 25%;
+    font-weight: bold;
+}
+.program_text{
+    top: 250px;
+}
+.program_text2{
+    top: 800px;
+}
+.program_text3 {
+    top:1700px;
+}
+.program_text4{
+    top: 2400px;
+}
+
+.program_text5{
+    top: 3400px;
+}
+.program_text6{
+    top: 4200px;
+}
+.program_text7{
+    top: 4400px;
+}
+.program_text8{
+    top: 5000px;
+}
+.first_img{
+    position: absolute;
+    top: 3650px;
+    width: 60%;
+    left: 10%;
+    overflow-y: hidden;
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Main from "./Main"
-import Tutorial from './Tutorial/Tutorial'
+import Tutorial from './Tutorial'
 
 
 const Router = () => {

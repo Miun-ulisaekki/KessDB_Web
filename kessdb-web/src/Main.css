@@ -1,9 +1,8 @@
-html, body {
+html,body {
   position: relative;
   width: 100%;
   height: 4321px;
   overflow-x: hidden;
-  
   background: #FAFAFA;
 }
 div{
@@ -60,11 +59,31 @@ div{
 .KessDB1{
   left: 5%;
   top: 2%;
+  animation: slide1 2s;
 }
 .KessDB2{
-  left: 29%;
+  right: -1.5%;
   top: 12%;
   padding: 0;
+  animation: slide2 1.5s;
+}
+@keyframes slide1 {
+  from {
+    left: -5%;
+  }
+
+  to {
+    left: 5%;
+  }
+}
+@keyframes slide2 {
+  from {
+    right: -24%;
+  }
+
+  to {
+    right: -1.5%;  
+  }
 }
 .korea,.speed,.easy,.socket {
   position: absolute;
@@ -115,14 +134,23 @@ div{
   top: 0.8%;
 }
 .group-page{
-  position: absolute;
+  display: block;
+  position: fixed;
   width: 374px;
   height: 1080px;
-  left: 0px;
-  top: 0px;
-
+  left: -2%;
+  top: -0.8%;
+  animation: slide_group 0.5s;
   background: #FFFFFF;
-  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
+}
+@keyframes slide_group{
+  from{
+    left: -2% + 374px;
+  }
+  to{
+    left: -2%;
+  }
 }
 .close {
   position: absolute;
@@ -141,7 +169,7 @@ top: 282px;
 font-family: 'Inter';
 font-style: normal;
 font-weight: 700;
-font-size: 20px;
+font-size: 18px;
 line-height: 24px;
 
 color: #000000;
@@ -156,7 +184,7 @@ color: #000000;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
   
   color: #D0D0D7;
@@ -171,7 +199,7 @@ color: #000000;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
   
   color: #D0D0D7;
@@ -187,7 +215,7 @@ color: #000000;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
   
   color: #D0D0D7;
@@ -199,7 +227,7 @@ color: #000000;
   left: 49%;
 }
 .scroll{
-  top: 20%;
+  top: 17%;
 }
 .service_text{
   position: absolute;
@@ -228,7 +256,7 @@ color: #000000;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
 
   color: #000000;
@@ -274,7 +302,7 @@ color: #000000;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
 
   color: #000000;
@@ -289,7 +317,7 @@ color: #000000;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
 
   color: #000000;
@@ -307,7 +335,7 @@ color: #000000;
   border: none;
 }
 .scroll2{
-  top: 47%;
+  top: 44.8%;
 }
 .KessDB3, .KessDB4, .KessDB5{
   position: absolute;
@@ -387,7 +415,7 @@ color: #000000;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
   text-align: right;
 
@@ -403,7 +431,7 @@ top: 62%;
 font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
-font-size: 45px;
+font-size: 40px;
 line-height: 54px;
 
 color: #000000;
@@ -422,7 +450,7 @@ color: #000000;
 
 }
 .scroll3{
-  top: 74%;
+  top: 70.7%;
 }
 .qanda{
   position: absolute;

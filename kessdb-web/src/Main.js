@@ -7,17 +7,22 @@ import img from './svg/man.png'
 import img2 from './svg/img2.png'
 import Group from './Group';
 import {useState} from 'react'
-import { NavLink, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 function Main() {
   const [mode, setMode] = useState(false);
   const Navigate = useNavigate();
-  
-  
+  const scroll_btn_event  = (top_) => {
+    window.scrollTo({top : 0, left : 0, behavior : 'smooth'});
+  }
+  const scrolltotop = () =>{
+    window.scrollTo(0, 0);
+}
+scrolltotop();
   return (
     <>
-      
+      <div>
       <Logo className = 'logo'/>
       <div className = 'background-logo'>KessDB</div>
       <div className = 'KessDB1'>KessDB</div>
@@ -29,9 +34,11 @@ function Main() {
       <Btn className = 'group'>
       </Btn>
       <a onClick = {e => {setMode(!mode)}} className = 'group'>
-      {mode == true ? <Group/> : null}
-       </a>
-       <Scroll className='scroll' />
+        {mode === true ? <Group/> : null}
+        </a>
+       <div className='scroll' onClick={()=>{window.scrollTo({top : 1400, left : 0, behavior : 'smooth'});}}>
+          <Scroll/>
+       </div>
       <div className = 'service_text'>Service</div>
       <div className='long_text'>개발을 모르는 일반인이라도 쉽게 접해볼 수 있다
 많은 데이터를 간단한 명령어로 관리할 수 있습니다.
@@ -43,7 +50,9 @@ function Main() {
       <div className='second_text'>카페에서나 바쁜 지하철에서나 간단하게 한글로 <br></br>지금 당장 DB를 설계해보세요 .</div>
       <div className='letssee'>알아보러가기</div>
       <button className='second_btn'>GO</button>
-      <Scroll className='scroll2' />
+      <div className='scroll2' onClick={()=>{window.scrollTo({top : 2680, left : 0, behavior : 'smooth'});}}>
+          <Scroll/>
+       </div>
       <div className = 'KessDB3'>KessDB</div>
       <img src={img} alt='peopleicon' className='peopleimg'></img>
       <div className = 'KessDB4'>KessDB</div>
@@ -55,9 +64,11 @@ function Main() {
         한글로 된 명령어이기 때문에 쉽게 배울수 있습니다.
       </div>
       <div className='tutorial_start'>공부하러 가볼까요?</div>
-      <button className='styleTuBtn' onClick={()=>{Navigate("/tutorial")}}>dd</button>
+      <button className='styleTuBtn' onClick={()=>{Navigate("/tutorial")}}>Go</button>
       {/* <button className='tutorial_btn' onClick={()=>{Navigate("/tutorial");}}>Go</button> */}
-      <Scroll className='scroll3' />
+      <div className='scroll3' onClick={()=>{window.scrollTo({top : 4100, left : 0, behavior : 'smooth'});}}>
+          <Scroll/>
+       </div>
       <img src={img2} alt='qanda' className='qanda'></img>
       <div className='qna'>Q&A</div>
       <div className='KessDB5'>KessDB</div>
@@ -65,7 +76,9 @@ function Main() {
       <div className='qna_text2'>열심히 공부해도 헷갈리기 마련입니다.
 온라인 Q&A로 도움을 받아 보세요.</div>
       <button button className='qna_btn'>Go</button>
-
+    
+      </div>
+      
     </>
   );
 }
